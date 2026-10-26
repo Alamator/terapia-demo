@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rezerwacja: umów pierwszą rozmowę · [NAZWA GABINETU]</title>
+  <meta name="description" content="Formularz rezerwacji pierwszego spotkania: wybór usługi, formy (gabinet lub wideo) i pory. Co dzieje się po wysłaniu.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101216" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23b4370a'/%3E%3Cpath d='M7 22 C 11 10, 15 26, 19 14 S 25 12, 26 9' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("demo-theme");
+        if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+        var m = localStorage.getItem("demo-motion");
+        if (m === "reduced" || m === "full") document.documentElement.setAttribute("data-motion", m);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><svg aria-hidden="true" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M7 22 C 11 10, 15 26, 19 14 S 25 12, 26 9" stroke="var(--accent-ink)" stroke-width="3" fill="none" stroke-linecap="round"/></svg><span>[NAZWA GABINETU]</span></a>
+      <div class="header-tools">
+        <button class="tool-btn" type="button" data-theme-toggle aria-pressed="false" aria-label="Przełącz tryb ciemny">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+          <span class="label">Tryb ciemny</span>
+        </button>
+        <button class="tool-btn" type="button" data-motion-toggle aria-pressed="false" aria-label="Ogranicz ruch i animacje">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3l2-6 4 12 3-9 2 3h4"/></svg>
+          <span class="label">Mniej ruchu</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <span>Menu</span>
+        </button>
+      </div>
+      <nav class="site-nav" id="site-nav" aria-label="Nawigacja główna" data-open="false">
+        <ul>
+          <li class="nav-home"><a href="index.html">Start</a></li>
+          <li><a href="oferta.html">Oferta</a></li>
+          <li><a href="diagnostyka-adhd.html">Diagnostyka ADHD</a></li>
+          <li><a href="o-mnie.html">O mnie</a></li>
+          <li><a href="informacje-praktyczne.html">Ceny i zasady</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li class="nav-cta"><a href="rezerwacja.html">Umów rozmowę</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container page-head">
+      <h1>Umów pierwszą rozmowę</h1>
+      <p class="lead">Trzy minuty. Nie musisz wiedzieć, co Ci jest. Jeśli nie wiesz, którą usługę wybrać, zostaw „konsultacja”.</p>
+    </div>
+
+    <section class="section" data-reading>
+      <div class="container">
+        <div class="grid grid-2" style="align-items:start;gap:2rem">
+          <div>
+            <form class="form" data-booking-form novalidate>
+              <div class="field">
+                <label for="imie">Imię</label>
+                <input id="imie" name="imie" type="text" autocomplete="given-name" required>
+                <span class="help">Samo imię wystarczy.</span>
+              </div>
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+                <span class="help">Na ten adres przyjdzie potwierdzenie terminu.</span>
+              </div>
+              <div class="field">
+                <label for="telefon">Telefon (opcjonalnie)</label>
+                <input id="telefon" name="telefon" type="tel" autocomplete="tel">
+                <span class="help">Jeśli wolisz SMS albo krótką rozmowę zamiast e-maila.</span>
+              </div>
+              <div class="field">
+                <label for="usluga">Z czym chcesz przyjść?</label>
+                <select id="usluga" name="usluga" required>
+                  <option value="konsultacja">Konsultacja wstępna (nie wiem jeszcze, co dalej)</option>
+                  <option value="psychoterapia">Psychoterapia indywidualna</option>
+                  <option value="adhd">Diagnostyka ADHD u dorosłych</option>
+                  <option value="rodzicielska">Konsultacja rodzicielska</option>
+                </select>
+              </div>
+              <fieldset class="field">
+                <legend>Forma spotkania</legend>
+                <div class="choices row">
+                  <label class="choice"><input type="radio" name="forma" value="w gabinecie" checked> <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.5-6-10a6 6 0 0 1 12 0c0 4.5-6 10-6 10z"/><circle cx="12" cy="11" r="2"/></svg> Gabinet, Pruszków</label>
+                  <label class="choice"><input type="radio" name="forma" value="online (wideo)"> <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></svg> Online (wideo)</label>
+                </div>
+              </fieldset>
+              <fieldset class="field">
+                <legend>Kiedy masz zwykle czas? (można zaznaczyć kilka)</legend>
+                <div class="choices row">
+                  <label class="choice"><input type="checkbox" name="pora-rano" value="rano"> Rano (8–12)</label>
+                  <label class="choice"><input type="checkbox" name="pora-popoludnie" value="popoludnie"> Popołudnie (12–16)</label>
+                  <label class="choice"><input type="checkbox" name="pora-wieczor" value="wieczor"> Wieczór (16–20)</label>
+                  <label class="choice"><input type="checkbox" name="pora-elastycznie" value="elastycznie"> Elastycznie</label>
+                </div>
+              </fieldset>
+              <div class="field">
+                <label for="wiadomosc">Kilka słów od Ciebie (opcjonalnie)</label>
+                <textarea id="wiadomosc" name="wiadomosc" placeholder="Np. „od lat nie kończę rzeczy, które zaczynam, i chcę sprawdzić, czy to ADHD”."></textarea>
+                <span class="help">Nie musi być składnie. Może być jedno zdanie.</span>
+              </div>
+              <label class="consent">
+                <input type="checkbox" name="zgoda" required>
+                <span>Wyrażam zgodę na przetwarzanie podanych danych w celu umówienia spotkania. Administrator: <span class="placeholder">[NAZWA ADMINISTRATORA DANYCH]</span>. Szczegóły w <a href="polityka-prywatnosci.html">polityce prywatności</a>.</span>
+              </label>
+              <div>
+                <button class="btn btn-primary" type="submit">Wyślij prośbę o termin <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+                <p class="small muted" style="margin-top:0.75rem">To makieta: przycisk nic nie wysyła. Pokazuje tylko, co stałoby się dalej.</p>
+              </div>
+            </form>
+            <div class="form-status" data-form-status data-show="false" role="status" aria-live="polite" style="margin-top:1rem">
+              <h3>Dziękuję. Tak wyglądałby następny krok.</h3>
+              <p data-form-summary></p>
+              <p>W wersji produkcyjnej ta wiadomość trafiłaby na <span class="placeholder">[E-MAIL]</span>, a Ty od razu dostajesz automatyczne potwierdzenie odbioru. Odpowiedź z propozycją terminu w ciągu <span class="placeholder">[CZAS ODPOWIEDZI]</span>.</p>
+              <p class="small muted">Formularz demonstracyjny: nic nie zostało wysłane ani zapisane.</p>
+            </div>
+          </div>
+
+          <div>
+            <h2>Co się dzieje po wysłaniu</h2>
+            <ol class="what-next">
+              <li><div><strong>Odpowiadam w ciągu <span class="placeholder">[CZAS ODPOWIEDZI]</span>.</strong><br>Proponuję 2–3 terminy pasujące do pór, które zaznaczysz.</div></li>
+              <li><div><strong>Wybierasz termin, dostajesz potwierdzenie.</strong><br>Jedna wiadomość: data, godzina, cena, adres gabinetu albo link do wideo.</div></li>
+              <li><div><strong>Dzień wcześniej: przypomnienie.</strong><br><span class="placeholder">[JEŚLI DOTYCZY: SMS lub e-mail]</span>. Można odwołać zgodnie z <a href="informacje-praktyczne.html">zasadami</a>.</div></li>
+              <li><div><strong>Spotkanie, 50 minut.</strong><br>Co się na nim dzieje, opisuję w <a href="index.html#sciezka">ścieżce pierwszej wizyty</a>.</div></li>
+            </ol>
+
+            <div class="card" style="margin-top:2rem">
+              <h3>Wolisz zadzwonić?</h3>
+              <p><strong><span class="placeholder">[TELEFON]</span></strong><br><span class="muted">Odbieram <span class="placeholder">[GODZINY ODBIERANIA]</span>. W trakcie sesji nie odbieram, oddzwaniam.</span></p>
+              <p class="small">Albo napisz: <span class="placeholder">[E-MAIL]</span></p>
+            </div>
+
+            <div style="margin-top:2rem">
+        <div class="checklist" data-checklist>
+          <div class="checklist-head">
+            <h3 id="cl-booking">Przed pierwszą wizytą</h3>
+            <span class="checklist-progress" aria-live="polite"><span class="visually-hidden">Odhaczone: </span><span data-checklist-progress>0 / 6</span></span>
+          </div>
+          <div class="checklist-bar" aria-hidden="true"><span data-checklist-bar></span></div>
+          <ul aria-labelledby="cl-booking">
+            <li><label><input type="checkbox"><span>Zapisz w 2–3 zdaniach, co Cię sprowadza. Nie musi być mądrze, ma być Twoje.</span></label></li>
+            <li><label><input type="checkbox"><span>Jeśli masz wcześniejsze diagnozy, opinie albo wypisy — zrób zdjęcie lub weź ze sobą.</span></label></li>
+            <li><label><input type="checkbox"><span>Spisz leki, które bierzesz (nazwa i dawka), jeśli jakieś bierzesz.</span></label></li>
+            <li><label><input type="checkbox"><span>Zastanów się, co chcesz, żeby było inaczej za pół roku. Jedno zdanie wystarczy.</span></label></li>
+            <li><label><input type="checkbox"><span>Sprawdź dojazd albo link do spotkania online i daj sobie 10 minut zapasu.</span></label></li>
+            <li><label><input type="checkbox"><span>Zapisz pytania, które chcesz zadać. W gabinecie łatwo o nich zapomnieć.</span></label></li>
+          </ul>
+          <p class="note">Opcjonalne. Dwie odhaczone rzeczy to już dobry start.</p>
+        </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <strong>[NAZWA GABINETU]</strong> · psychoterapia i diagnostyka ADHD dorosłych<br>
+        [ULICA I NUMER], Pruszków · <a href="kontakt.html">kontakt</a>
+      </div>
+      <ul>
+        <li><a href="oferta.html">Oferta</a></li>
+        <li><a href="diagnostyka-adhd.html">Diagnostyka ADHD</a></li>
+        <li><a href="informacje-praktyczne.html">Ceny i zasady</a></li>
+        <li><a href="rezerwacja.html">Rezerwacja</a></li>
+        <li><a href="wynajem-gabinetu.html">Wynajem gabinetu</a></li>
+        <li><a href="polityka-prywatnosci.html">Polityka prywatności</a></li>
+      </ul>
+      <p class="footer-demo">Wersja demonstracyjna strony. Dane w nawiasach kwadratowych, np. <span class="placeholder">[CENA]</span>, to miejsca do uzupełnienia przez właścicielkę gabinetu. Strona nie używa plików cookie ani skryptów śledzących.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
