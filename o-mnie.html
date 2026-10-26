@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O mnie: jak pracuję i czego się spodziewać · [NAZWA GABINETU]</title>
+  <meta name="description" content="Jak pracuję, w jakich podejściach, czego nie robię. Konkretnie, bez laurki.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101216" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23b4370a'/%3E%3Cpath d='M7 22 C 11 10, 15 26, 19 14 S 25 12, 26 9' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("demo-theme");
+        if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+        var m = localStorage.getItem("demo-motion");
+        if (m === "reduced" || m === "full") document.documentElement.setAttribute("data-motion", m);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><svg aria-hidden="true" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M7 22 C 11 10, 15 26, 19 14 S 25 12, 26 9" stroke="var(--accent-ink)" stroke-width="3" fill="none" stroke-linecap="round"/></svg><span>[NAZWA GABINETU]</span></a>
+      <div class="header-tools">
+        <button class="tool-btn" type="button" data-theme-toggle aria-pressed="false" aria-label="Przełącz tryb ciemny">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+          <span class="label">Tryb ciemny</span>
+        </button>
+        <button class="tool-btn" type="button" data-motion-toggle aria-pressed="false" aria-label="Ogranicz ruch i animacje">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3l2-6 4 12 3-9 2 3h4"/></svg>
+          <span class="label">Mniej ruchu</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <span>Menu</span>
+        </button>
+      </div>
+      <nav class="site-nav" id="site-nav" aria-label="Nawigacja główna" data-open="false">
+        <ul>
+          <li class="nav-home"><a href="index.html">Start</a></li>
+          <li><a href="oferta.html">Oferta</a></li>
+          <li><a href="diagnostyka-adhd.html">Diagnostyka ADHD</a></li>
+          <li><a href="o-mnie.html" aria-current="page">O mnie</a></li>
+          <li><a href="informacje-praktyczne.html">Ceny i zasady</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li class="nav-cta"><a href="rezerwacja.html">Umów rozmowę</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container page-head">
+      <h1>[IMIĘ I NAZWISKO]</h1>
+      <p class="lead">[TYTUŁ ZAWODOWY, np. psychoterapeutka poznawczo-behawioralna]. Gabinet w Pruszkowie i online.</p>
+    </div>
+
+    <section class="section" data-reading>
+      <div class="container">
+        <div class="tldr">
+          <span class="tldr-label">W skrócie</span>
+          <ul>
+              <li>Pracuję zadaniowo: cel, plan, sprawdzanie, czy działa.</li>
+              <li>Specjalizuję się w dorosłym ADHD, lęku i trudnościach z organizacją życia.</li>
+              <li>Nie robię: diagnostyki dzieci, farmakoterapii, terapii par.</li>
+          </ul>
+        </div>
+
+        <span class="reading-time"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span class="visually-hidden">Czas czytania: </span><span data-reading-time></span></span>
+        <div class="grid grid-2" style="align-items:start">
+          <div class="prose">
+            <h2>Jak pracuję</h2>
+            <p>Konkretnie. Na pierwszym spotkaniu pytam, co ma się zmienić, i do tego wracamy co kilka sesji. Jeśli coś nie działa, zmieniamy metodę, a nie udajemy, że działa.</p>
+            <p>Lubię, kiedy osoba po drugiej stronie rozumie, dlaczego robimy to, co robimy. Dlatego tłumaczę mechanizmy, pokazuję narzędzia i zostawiam zadania między sesjami. Małe, wykonalne, dopasowane do głowy, która nie zawsze współpracuje.</p>
+            <p>Z osobami z ADHD pracuję inaczej niż „z podręcznika”: krócej na jeden temat, więcej struktury w sesji, więcej notatek, które wychodzą ze spotkania razem z Tobą.</p>
+
+            <h2 style="margin-top:2rem">Czego nie robię</h2>
+            <ul>
+              <li>Nie diagnozuję i nie prowadzę terapii dzieci i nastolatków. Dla rodziców jest <a href="oferta.html#rodzice">konsultacja rodzicielska</a>.</li>
+              <li>Nie przepisuję leków. To rola lekarza psychiatry; na życzenie dostajesz ode mnie pisemne podsumowanie na taką wizytę.</li>
+              <li>Nie prowadzę terapii par ani rodzin.</li>
+              <li>Nie obiecuję, że będzie szybko. Obiecuję, że będzie jasno, na czym stoimy.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="card">
+              <h3>Wykształcenie i kwalifikacje</h3>
+              <ul style="padding-left:1.2rem;margin:0">
+                <li><span class="placeholder">[UCZELNIA, KIERUNEK, ROK]</span></li>
+                <li><span class="placeholder">[SZKOŁA PSYCHOTERAPII, NURT, STATUS CERTYFIKACJI]</span></li>
+                <li><span class="placeholder">[SZKOLENIE Z DIAGNOSTYKI ADHD / DIVA-5]</span></li>
+                <li><span class="placeholder">[INNE KURSY I SZKOLENIA]</span></li>
+              </ul>
+            </div>
+            <div class="card" style="margin-top:1rem">
+              <h3>Superwizja i etyka</h3>
+              <p>Pracuję pod stałą superwizją (<span class="placeholder">[CZĘSTOTLIWOŚĆ]</span>) i zgodnie z kodeksem etycznym <span class="placeholder">[TOWARZYSTWO / ORGANIZACJA]</span>. To, co mówisz w gabinecie, zostaje w gabinecie, z wyjątkami, które wyjaśniam na pierwszym spotkaniu.</p>
+            </div>
+            <div class="card" style="margin-top:1rem">
+              <h3>Prywatnie</h3>
+              <p><span class="placeholder">[OPCJONALNIE: 2–3 zdania od właścicielki, np. dlaczego akurat ADHD, co ją w tej pracy trzyma. Albo nic.]</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="one-action">
+          <a class="btn btn-primary" href="rezerwacja.html">Umów pierwszą rozmowę <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="hint">Pierwsze spotkanie jest też po to, żebyś sprawdził(a), czy mi ufasz.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <strong>[NAZWA GABINETU]</strong> · psychoterapia i diagnostyka ADHD dorosłych<br>
+        [ULICA I NUMER], Pruszków · <a href="kontakt.html">kontakt</a>
+      </div>
+      <ul>
+        <li><a href="oferta.html">Oferta</a></li>
+        <li><a href="diagnostyka-adhd.html">Diagnostyka ADHD</a></li>
+        <li><a href="informacje-praktyczne.html">Ceny i zasady</a></li>
+        <li><a href="rezerwacja.html">Rezerwacja</a></li>
+        <li><a href="wynajem-gabinetu.html">Wynajem gabinetu</a></li>
+        <li><a href="polityka-prywatnosci.html">Polityka prywatności</a></li>
+      </ul>
+      <p class="footer-demo">Wersja demonstracyjna strony. Dane w nawiasach kwadratowych, np. <span class="placeholder">[CENA]</span>, to miejsca do uzupełnienia przez właścicielkę gabinetu. Strona nie używa plików cookie ani skryptów śledzących.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
